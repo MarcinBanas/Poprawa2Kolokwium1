@@ -27,7 +27,7 @@ namespace Poprawa2Kolokwium1
                 Console.WriteLine("Numer:" + i + " Zyczenie: " + tab[i]);
             }
             string odp;
-            
+
             {
                 Console.WriteLine("Czy chcesz zmienic kolejnosc?(tak,nie)");
                 odp = Console.ReadLine();
@@ -39,13 +39,14 @@ namespace Poprawa2Kolokwium1
                     Console.WriteLine("podaj nowy indeks elementu");
                     int index2;
                     index2 = int.Parse(Console.ReadLine());
-                    string z=tab[index];
+                    string z = tab[index];
                     tab[index] = tab[index2];
                     tab[index] = z;
                 }
 
-            
 
+
+            }
         }
     }
 }
