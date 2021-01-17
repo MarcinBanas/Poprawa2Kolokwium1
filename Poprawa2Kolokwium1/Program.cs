@@ -6,12 +6,12 @@ namespace Poprawa2Kolokwium1
     {
         public void CzasPrzenoszenia(double dane)
         {
-            
-                double czaswgrywanie, czaszgrywanie;
-                czaswgrywanie = (dane * 1000) / 3;
-                czaszgrywanie = (dane * 1000) / 5;
-                Console.WriteLine("Czas:" + (czaswgrywanie + czaszgrywanie));
-            
+
+            double czaswgrywanie, czaszgrywanie;
+            czaswgrywanie = (dane * 1000) / 3;
+            czaszgrywanie = (dane * 1000) / 5;
+            Console.WriteLine("Czas:" + (czaswgrywanie + czaszgrywanie));
+
 
         }
         static void Main(string[] args)
@@ -24,21 +24,27 @@ namespace Poprawa2Kolokwium1
             }
             for (int i = 0; i < tab.Length; i++)
             {
-                Console.WriteLine("Numer:"+i+" Zyczenie: "+tab[i]);
+                Console.WriteLine("Numer:" + i + " Zyczenie: " + tab[i]);
             }
             string odp;
-            Console.WriteLine("Czy chcesz zmienic kolejnosc?(tak)");
-            odp = Console.ReadLine();
-            if (odp == "tak")
+            
             {
-                Console.WriteLine("podaj indeks elementu:");
-                int index;
-                index =int.Parse(Console.ReadLine());
-                Console.WriteLine("podaj nowy indeks elementu");
-                int index2;
-                index2 = int.Parse(Console.ReadLine());
+                Console.WriteLine("Czy chcesz zmienic kolejnosc?(tak,nie)");
+                odp = Console.ReadLine();
+                if (odp == "tak")
+                {
+                    Console.WriteLine("podaj indeks elementu:");
+                    int index;
+                    index = int.Parse(Console.ReadLine());
+                    Console.WriteLine("podaj nowy indeks elementu");
+                    int index2;
+                    index2 = int.Parse(Console.ReadLine());
+                    string z=tab[index];
+                    tab[index] = tab[index2];
+                    tab[index] = z;
+                }
 
-            }
+            
 
         }
     }
