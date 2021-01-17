@@ -42,6 +42,10 @@ namespace Poprawa2Kolokwium1
                     string z = tab[index];
                     tab[index] = tab[index2];
                     tab[index] = z;
+                    for (int i = 0; i < tab.Length; i++)
+                    {
+                        Console.WriteLine(tab[i]);
+                    }
                 }
 
 
