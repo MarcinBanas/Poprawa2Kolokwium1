@@ -6,22 +6,12 @@ namespace Poprawa2Kolokwium1
     {
         public void CzasPrzenoszenia(double dane)
         {
-            if (dane > 16)
-            {
-                double iloscnosnikow = dane / 16;
+            
                 double czaswgrywanie, czaszgrywanie;
                 czaswgrywanie = (dane * 1000) / 3;
                 czaszgrywanie = (dane * 1000) / 5;
                 Console.WriteLine("Czas:" + (czaswgrywanie + czaszgrywanie));
-
-            }
-            else
-            {
-                double czaswgrywanie, czaszgrywanie;
-                czaswgrywanie = (dane * 1000) / 3;
-                czaszgrywanie = (dane * 1000) / 5;
-                Console.WriteLine("Czas:" + (czaswgrywanie + czaszgrywanie));
-            }
+            
 
         }
         static void Main(string[] args)
