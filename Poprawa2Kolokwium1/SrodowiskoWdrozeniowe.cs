@@ -27,7 +27,7 @@ namespace Poprawa2Kolokwium1
             {
                 Console.WriteLine("Podana wersja jest aktualna");
             }
-            if (wersja > AktualnaWersja)
+            if (wersja < AktualnaWersja)
             {
                 throw new ArgumentException("blad");
             }
